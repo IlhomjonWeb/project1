@@ -1,0 +1,44 @@
+.navbar {
+    .inner_navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .nav-links {
+            ul {
+                display: flex;
+                list-style: none;
+                gap: 40px;
+                text-decoration: none;
+
+                li {
+                    padding: 10px 20px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 16px;
+                    font-family: sans-serif;
+                    text-decoration: none;
+                    color: #686868;
+                }
+            }
+        }
+
+        .national-languages {
+            display: flex;
+            gap: 30px;
+
+            select {
+                border: none;
+                font-size: 15px;
+                font-weight: 600;
+                font-family: sans-serif;
+                color: #282828;
+            }
+
+            select:active,
+            :focus {
+                outline: none;
+            }
+        }
+    }
+}
