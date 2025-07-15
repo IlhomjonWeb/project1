@@ -5,6 +5,7 @@ import FinanceTools from '../pages/financetools/FinanceTools';
 import Programs from '../../src/pages/programs/Programs';
 import '../../src/assets/css/navbar.scss'
 import Logo from '../assets/svg/Logo';
+import Arrow from '../assets/svg/Arrow';
 import Button from './Button';
 
 const Navbar = () => {
@@ -15,11 +16,11 @@ const Navbar = () => {
                 <div className="nav-links">
                     <ul>
                         <li><Link to="/">Home</Link></li>
-                        <li><Link to="/programs">programs</Link>
+                        <li><Link to="/programs">programs</Link><Arrow />
                             <ul className="dropdown">
                                 <li><Link to="">International educational programs</Link></li>
                                 <li><Link to="">Specialized courses</Link></li>
-                                <li><Link to="">Islamic Finance Literacy Course</Link></li>
+                                {/* {/* <li><Link to="">Islamic Finance Literacy Course</Link></li> */}
                                 <li><Link to="">Certification program</Link></li>
                             </ul>
                         </li>
