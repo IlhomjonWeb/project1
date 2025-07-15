@@ -1,10 +1,11 @@
 import React from 'react'
 import './Home.scss'
+import { Link } from 'react-router-dom'
 const Home = () => {
     return (
         <div>
-            <h1>Welcome to My Website</h1>
-            <p>This is the home page.</p>
+            <Link to="/">Go to Contact Page</Link>
+            <Link to="/contact">Go to Home Page</Link>
         </div>
     )
 }
